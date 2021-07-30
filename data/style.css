@@ -1,0 +1,376 @@
+
+body {
+  /* max-width: 1250px; */
+  min-width: 900px;
+  min-height: 1010px;
+   height: 100% ;
+   margin: 0;
+   margin-left: 8px;
+   margin-right: 8px;
+  background: rgb(51, 153, 221);
+  overflow-x:hidden; 
+   
+  }
+div.mainDiv{
+  max-width: 1250px;
+  background: rgb(51, 153, 221);
+
+}
+.container_top {
+  display: flex;
+  align-items: stretch;
+  padding-bottom: 15%;
+}
+
+.container_top, .container_centr, .container_switch, .container_slider, .container_botton, .mainDiv,
+ .WiFiSetMode{
+  padding: .5%;
+  border: 1px solid silver;
+  margin-bottom: 1%;
+  max-width: 1250px;
+  background: rgb(51, 153, 221);
+  display: flex;
+  flex-direction: row;
+
+}
+
+.box_h1, .box_h2, .box_h3, .box_c1, .box_c2, .box_c3, .box_sw1{
+  text-align: center;
+}
+
+
+div.box_h1{
+  flex:  1;
+  order: 1;
+}
+
+div.box_h2 {    
+  flex:  3;
+  order: 2;
+}
+  
+
+div.box_h3{
+  flex:  1;
+  order: 3;
+}
+
+
+.container_centr, .container_slider, .container_switch, .container_botton{
+  display: flex;
+  align-items: stretch;
+}
+
+div.box_c1{
+  flex:  1;
+  order: 1;
+
+}
+
+
+div.box_c2 {    
+  flex:  3;
+  order: 2;
+
+}
+  
+
+
+div.box_c3{
+  flex:  1;
+  order: 3;
+}
+
+
+div.box_s1{
+  flex:  1;
+  order: 1;
+  text-align:center;
+}
+
+.cur_tempr, .cur_spin {
+  display: grid;
+  font-size: 40px;
+}
+.cur_tempr_hide, .cur_spin_hide {
+  display: none;
+}
+
+div.box_s2 {    
+  flex:  5;
+  order: 2;
+  overflow: hidden;
+  padding-top: 25px;
+  z-index: 44;
+
+}
+  
+
+div.box_s3{
+  flex:  1;
+  order: 3;
+  text-align:center;
+}
+
+.container_slider{
+ /* border: none; */
+
+}
+.container_switch {
+  margin-top: 0%;
+    position:absolute;
+   bottom:0;
+   width:100%;
+    /* border: none;*/
+
+
+}
+
+div.box_sw1{
+  flex:  1;
+  order: 1;
+}
+
+
+div.box_sw2 {    
+  flex:  3;
+  order: 2; 
+}
+  
+
+div.box_sw3{
+  flex:  1;
+  order: 3;
+  align-items: flex-end;
+}
+
+.icon{
+  width: 100px;
+  margin: 0 auto;
+  display: flex;
+    -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+
+}
+
+.lockSave, .saveWIFI{
+  height: 100px;
+  width: auto;
+    -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+
+}
+.icon:hover, .lockSave:hover, .saveWIFI:hover{
+   /* border-radius: 60%; */
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.progPic, .connect{
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+.slider1{
+  margin: 0 auto;
+}
+
+#slider1 .rs-range-color {
+    background-color: #54BBE0;
+}
+#slider1 .rs-path-color {
+    background-color: white;
+}
+#slider1 .rs-handle {
+    background-color: #838383;
+}
+#slider1 .rs-bg-color {
+    background: rgb(51, 153, 221);
+}
+
+
+
+.wrapper {
+  position: relative;
+  overflow-x: hidden;
+}
+.menu {
+  margin-top: 11%;
+  position: fixed;
+  left: 0;top: 0;
+  z-index: 99;
+  width: 900px; /*width: 50%; */
+  height: 150vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(91, 177, 234);
+  transition: 0.5s;
+  transform: translateX(-100%);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+}
+.menu_active {
+  transform: translateX(0%);
+  height: 80%;
+  border-radius: 10px;
+  flex-direction: column;
+}
+.menu-list_Station, .menu-list_Controll {
+ /* display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 20%;
+  flex-direction: column; */
+  display: grid;
+    margin-left: 1%;
+    font-size: -webkit-xxx-large;
+}
+
+.content_active {
+  transform: translateX(10%);
+}
+
+.config {
+ padding-bottom: 0%; 
+}
+
+.WiFiSet, .WiFiList, .menu {
+border: 1px solid silver;
+/*width: 900px; */
+}
+
+.WiFiSet {
+ margin: auto;
+ width: 800px;
+  
+}
+.WiFiList {
+  max-height: 20%;
+  overflow-y: auto;
+  width: 800px;
+}
+
+.ssid_name, .ssid_pass, .ssid_mode{
+    font-size: -webkit-xxx-large;
+    font-size: xxx-large;
+    width: 535px;
+    margin: 1%;
+    -webkit-appearance: none;
+    border-radius: 5px;
+    border: 0px solid #000000;
+}
+
+ .label_ssid_name, .label_ssid_pass{
+    display: flex;
+    font-size: -webkit-xxx-large;
+    font-size: xxx-large;
+    padding-left: 1%;
+    border: 1px;
+    border-radius: 8px;
+
+}
+ .label_ssid_pass:focus {
+     outline: none; 
+}
+
+a{
+  text-decoration: none;
+}
+.box_pr_coverT, .box_pr_coverS {
+    width: 100%;
+    height: 0%;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: inherit;
+    position: relative;
+    z-index: 2;
+    transition: height 1s ease-out;
+    transform: translateY(0%);
+
+}
+.box_pr_cover_showT, .box_pr_cover_showS {
+    height: 90%;
+  }
+
+.lock_shake {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+  @keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@media (max-height: 900px) {  /*1000px*/
+.container_top, .container_centr, .container_switch, .container_slider, .container_botton, .mainDiv {
+  margin-bottom: .1%;}
+
+ .icon, .progPic, .connect{
+  width: 30px;
+  height: 30px;} 
+  .lock{
+  width: 100px;
+  height: 130px;
+  }
+
+}
+@media (max-height: 730px) {  /*730px*/
+.rs-tooltip, .rs-tooltip-text{ display: non; }
+}
+
+div.line1_1{
+    flex:  5;
+    order: 1;
+}
+div.line1_2{
+    flex:  0;
+    order: 2;
+    align-self: flex-end;
+}
+div.line1_22, .link3{
+    flex: 30;
+    font-size: xxx-large;
+    order: 2;
+    align-self: center;
+    text-align: center;   
+}
+
+.WM{
+  width: 210px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.link{
+    display: flex;
+    flex-flow: row;
+    font-size: xx-large;
+}
